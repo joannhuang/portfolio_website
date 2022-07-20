@@ -1,0 +1,33 @@
+body {
+    background-color: #8f9779;
+  }
+  
+  .wrapper {
+    color: #FFF;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing {
+    width: 11ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Georgia', sans-serif;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
